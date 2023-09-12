@@ -1,3 +1,20 @@
+# ------------------------------------------------------------------------------------------------
+# Author: Antonio Oviedo Paredes
+# Date: 12/02/2023
+# Description: Implementation of a Decision Tree for Classification.
+# Sections:
+#     - Class Node: Defines a node in the decision tree.
+#     - Class DecisionTree: Defines the decision tree.
+#     - Main function: Example of how the classes work.
+# Functionality: This code implements a decision tree for classifying data based on given features.
+# Usage:
+#     1. Create an instance of DecisionTree with optional parameters.
+#     2. Train the decision tree using the train method with feature data and target labels.
+#     3. Make predictions using the predict method with new feature data.
+#     4. Obtain the tree's structure using the structure method.
+# ------------------------------------------------------------------------------------------------
+
+# Import necessary libraries and modules
 import numpy as np
 import pandas as pd
 from collections import Counter
@@ -284,7 +301,7 @@ class DecisionTree:
 
 
 if __name__ == "__main__":
-     # Import necessary libraries and modules
+    # Import necessary libraries and modules
     from sklearn.model_selection import train_test_split
     import matplotlib.pyplot as plt
     from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
